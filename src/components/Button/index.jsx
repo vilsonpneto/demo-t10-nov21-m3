@@ -3,7 +3,7 @@ import "./styles.css";
 const ButtonComp = ({ children }) => {
   return (
     <>
-      <button className="button-1">{children}</button>
+      <button className="button-1"><h1>{children}</h1></button>
 
       <h2>Texto com o botão</h2>
     </>
