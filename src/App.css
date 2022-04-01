@@ -32,7 +32,24 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.button-container-by {
+  background-color: #000;
+  color: yellow;
+}
+
+.button-container-yb {
+  background-color: yellow;
+  color: #000;
+}
+
+.App-header svg {
+  height: 200px;
+  width: 200px;
 }
