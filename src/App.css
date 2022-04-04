@@ -1,3 +1,17 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: cadetblue;
+}
+
+li {
+  margin: 10px 0;
+  border: 3px solid #003;
+}
+
 .App {
   text-align: center;
 }
