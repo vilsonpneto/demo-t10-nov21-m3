@@ -8,15 +8,14 @@
 );*/
 
 /*
- * Quando precisamos aplicar alguma lógica no componente precisamos usar chaves no escopo da Arrow Function com c ()=>{Return()})
+ * O Exemplo abaixo mostra quando precisamos aplicar lógica no componente, então usamos chaves no escopo da Arrow Function com o return explícito ()=>{Return()})
  */
 
 const Button = ({ onClick, styleButton, children }) => {
   // Com o return explícito aqui vai a lógica :)
   return (
     <button onClick={onClick} className={styleButton}>
-      {" "}
-      {children}{" "}
+      {children}
     </button>
   );
 };
