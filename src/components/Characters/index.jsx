@@ -1,5 +1,18 @@
+import { useEffect } from "react";
+
 const Characters = ({ dataApi }) => {
-  console.log(dataApi);
+  //console.log(dataApi);
+
+  useEffect(() => {
+    dataApi === undefined
+      ? console.log("Montagem")
+      : console.log("Autalização");
+
+    return () => {
+      console.log("Desmontagem");
+    };
+  }, [dataApi]);
+
   return (
     <ul>
       {dataApi &&
