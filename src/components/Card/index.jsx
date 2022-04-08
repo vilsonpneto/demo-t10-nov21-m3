@@ -4,6 +4,8 @@ import ButtonsPage from "../ButtonsPage";
 import ListCharacters from "../ListCharacters";
 import TitlePage from "../TitlePage";
 
+import { StyleList } from "../styles";
+
 const Card = () => {
   const [currentPage, setCurrentPage] = useState(
     "https://www.swapi.tech/api/people"
@@ -40,7 +42,7 @@ const Card = () => {
       {loading ? (
         <h3>Carregando...</h3>
       ) : (
-        <ul>
+        <StyleList>
           {dataApi.map((data) => {
             return (
               <ListCharacters key={data.uid} url={data.url}>
@@ -48,7 +50,7 @@ const Card = () => {
               </ListCharacters>
             );
           })}
-        </ul>
+        </StyleList>
       )}
     </>
   );

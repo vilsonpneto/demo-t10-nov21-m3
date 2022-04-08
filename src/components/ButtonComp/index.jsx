@@ -1,8 +1,9 @@
-import "./styles.css";
+//import "./styles.css";
+import { StyleButton } from "./style";
 
 const ButtonComp = (props) => {
   ///lógica
-  return <button className="button-33" onClick={props.onClick} >{props.children}</button>;
+  return <StyleButton onClick={props.onClick}>{props.children}</StyleButton>;
 };
 
 export default ButtonComp;
